@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+                    background-color:purple;
+                    width: 100%;
+                    height: 100vh;
+                    font-family: cursive;
+                    position: relative;
+                }
+    </style>
+</head>
+<body>
+    <div id="bg color">
+    <input type="text" id="colorInputText">
+    <input type="color" id="colorInputColor">
+    <input type="button" id="colorbutton" value="click to change color" onclick="changecolor()">
+</div>
+    <script>
+        function changecolor(){
+            let color = document.getElementById('colorInputColor').value;
+            document.body.style.backgroundColor = color;
+            document.getElementById('colorInputText').value = color;
+
+        }
+    </script>
+</body>
+</html>
